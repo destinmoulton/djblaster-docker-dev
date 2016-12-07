@@ -61,9 +61,3 @@ Start a shell in one of the containers:
 ```
 $ docker exec -i -t container_name /bin/sh
 ```
-
-
-### Port Notes
-----
-The ports have been remapped.
-
