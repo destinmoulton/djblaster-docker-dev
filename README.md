@@ -8,10 +8,10 @@ Set of docker containers for running djblaster.
 This should be cloned into a folder parallel to the main DJBlaster folder.
 
 * parent_dir
-** djblaster
-*** Main DJBlaster repo cloned here.
-** docker
-*** This repo cloned here.
+.* djblaster
+..* Main DJBlaster repo cloned here.
+.* docker
+..* This repo cloned here.
 
 The local volumes will be stored in the "docker" folder. This includes a local volume for the mysql container so that there is data persistence while testing.
 
