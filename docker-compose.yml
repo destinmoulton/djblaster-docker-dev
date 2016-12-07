@@ -1,0 +1,39 @@
+version: '2'
+services:
+    db:
+        image: mysql
+        ports:
+            - "3333:3306"
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: symfony
+            MYSQL_USER: symfony
+            MYSQL_PASSWORD: symfony
+        volumes:
+            - ./volumes/mysql:/var/lib/mysql
+    php:
+        build: ./php-fpm
+        expose:
+            - "9000"
+        volumes:
+            - ../../djblaster:/srv/www/djblaster.lcl/djblaster
+            - ./volumes/symfony-cache:/srv/www/djblaster.lcl/djblaster/app/cache
+            - ./volumes/logs/symfony:/srv/www/djblaster.lcl/djblaster/app/logs
+        links:
+            - db
+    nginx:
+        build: ./nginx
+        ports:
+            - "88:80"
+        links:
+            - php
+        volumes_from:
+            - php
+        volumes:
+            - ./volumes/logs/nginx/:/var/log/nginx
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        ports:
+            - "8888:80"
+        links:
+            - db
