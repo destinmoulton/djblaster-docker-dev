@@ -8,6 +8,8 @@ Includes:
 * php-fpm (5.6)
 * phpMyAdmin
 
+The images are derived from Alpine distros.
+
 ### Requirements
 ----
 * docker
