@@ -1,6 +1,6 @@
 ### djblaster-docker
 ----
-Set of docker containers for running djblaster.
+Set of docker containers for testing and running [DJBlaster](https://github.com/destinmoulton/djblasterbundle).
 
 Includes:
 * MySQL DB
@@ -63,3 +63,7 @@ Start a shell in one of the containers:
 ```
 $ docker exec -i -t container_name /bin/sh
 ```
+
+### License
+----
+[MIT](https://github.com/destinmoulton/djblaster-docker-dev/blob/master/LICENSE)
