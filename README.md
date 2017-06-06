@@ -32,7 +32,9 @@ This should be cloned into a folder parallel to the main DJBlaster folder.
 
 * parent_dir
   * djblaster
-    * Main DJBlaster repo cloned here.
+    * symfony_installation
+      * src/djblaster
+        * Where the DJ Blaster bundle should be cloned.
   * docker
     * This repo cloned here.
 
