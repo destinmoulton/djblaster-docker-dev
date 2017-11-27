@@ -13,8 +13,8 @@ services:
             - ./volumes/mysql:/var/lib/mysql
     php:
         build: ./php-fpm
-        expose:
-            - "9000"
+        ports:
+            - "9000:9000"
         volumes:
             - ../djblaster:/srv/www/djblaster.lcl/djblaster
             - ./volumes/symfony-cache:/srv/www/djblaster.lcl/djblaster/app/cache
