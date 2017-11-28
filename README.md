@@ -18,9 +18,7 @@ The images are derived from Alpine distros.
 ### Getting Started
 ----
 Start the docker containers:
-```
-$ docker-compose up -d
-```
+`$ docker-compose up -d`
 
 DJBlaster: http://djblaster.lcl:88
 
@@ -47,24 +45,19 @@ You can of course use whatever structure you prefer, but you will need to alter 
 ----
 
 Start the docker containers:
-```
-$ docker-compose up -d
-```
+`$ docker-compose up -d`
 
 Stop and remove the docker containers:
-```
-$ docker-compose down
-```
+`$ docker-compose down`
+
+Rebuild the docker containers:
+`$ docker-compose build`
 
 List the running docker processes:
-```
-$ docker ps
-```
+`$ docker ps`
 
 Start a shell in one of the containers:
-```
-$ docker exec -i -t container_name /bin/sh
-```
+`$ docker exec -i -t container_name /bin/sh`
 
 ### License
 ----
