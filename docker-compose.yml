@@ -17,8 +17,6 @@ services:
             - "9000:9000"
         volumes:
             - ../djblaster:/srv/www/djblaster.lcl/djblaster
-            - ./volumes/symfony-cache:/srv/www/djblaster.lcl/djblaster/app/cache
-            - ./volumes/logs/symfony:/srv/www/djblaster.lcl/djblaster/app/logs
         links:
             - db
     nginx:
