@@ -40,5 +40,5 @@ ADD symfony.pool.conf /etc/php7/php-fpm.d/
 
 CMD ["php-fpm7", "-F"]
 
-WORKDIR /var/www/symfony
+WORKDIR /srv/www/djblaster.lcl/djblaster
 EXPOSE 9000
